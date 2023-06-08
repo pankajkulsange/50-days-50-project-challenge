@@ -1,0 +1,73 @@
+/* Importing font  */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+/* Reset browser default css  */
+* {
+  box-sizing: border-box;
+}
+/* Basic common css  */
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+}
+#first {
+  background-image: url("https://images.unsplash.com/photo-1501425359013-96058e410cfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZXhwbG9yZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+#second {
+  background-image: url("https://plus.unsplash.com/premium_photo-1667579010540-6ae34851c8eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyayUyMGZvcmVzdCUyMGxhcHRvcCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+#third {
+  background-image: url("https://images.unsplash.com/photo-1548263594-a71ea65a8598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3VubnklMjBiZWFjaCUyMGxhcHRvcCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+#fourth {
+  background-image: url("https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMG9uJTIwd2F0ZXIlMjBsYXB0b3AlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+}
+#fifth {
+  background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW5zJTIwY2xvdWQlMjBsYXB0b3AlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(4) {
+    display: none;
+  }
+}
